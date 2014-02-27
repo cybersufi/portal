@@ -3,7 +3,7 @@
 class acl {
 	
 	var $perms = array();		//Array : Stores the permissions for the user
-	var $userID;			//Integer : Stores the ID of the current user
+	var $userID;				//Integer : Stores the ID of the current user
 	var $userRoles = array();	//Array : Stores the roles of the current user
 	var $ci;
 	
