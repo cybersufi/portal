@@ -4,12 +4,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="generator" content="Joomla! - Open Source Content Management">
-  	<title>local-joomla - Administration</title>
-  	<link href="http://localhost/joomla/administrator/templates/isis/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
-  	<link rel="stylesheet" href="./local-joomla - Administration_files/chosen.css" type="text/css">
-  	<!--<link rel="stylesheet" href="./local-joomla - Administration_files/template.css" type="text/css">-->
+  	<title>Redirecting - <?php echo $site_name; ?></title>
+  	<link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
 	<?php
-		$this->asset->stylesheet('admin/admin');
+		$this->asset->stylesheet('global/global2');
 	?>
   	<style type="text/css">
 		html { display:none }
@@ -26,9 +24,6 @@
 			}
 		}
 	</style>
-	<!--[if lt IE 9]>
-		<script src="../media/jui/js/html5.js"></script>
-	<![endif]-->
 </head>
 
 <body class="site com_login view-login layout-default task- itemid- " style="">
@@ -38,7 +33,21 @@
 			<!-- Begin Content -->
 			<div id="element-box" class="login well">
 				<div id="system-message-container">
-					<p>blah</p>
+					<p>
+						<?php
+							$this->asset->image('loading.gif', 'Loading Anim', array("width" => "80", "height" => "80", "sytle" => "margin: 10px", "align" => "absmiddle"));
+						?>
+						Please Wait, Redirecting...<br>
+		    			<script type="text/javascript">
+							//var base_url = '<?php echo config_item('base_url'); ?>';
+							var base_url = site_url;
+							if (self == top) {
+								document.write('<span>Click <a href="'+base_url+'">here</a> if you are not redirected</span>');
+							} else {
+								document.write('<span>Click <a href="javascript:parent.change_parent_url()">here</a> if you are not redirected</span>');
+							}
+						</script>
+					</p>
 				</div>
 			</div>
 			<noscript>
@@ -49,8 +58,8 @@
 	</div>
 	<div class="navbar navbar-fixed-bottom hidden-phone">
 		<p class="pull-right">
-			© 2014 portal		</p>
-		<a class="login-joomla" href="http://localhost/portal/" target="_blank" title="portal">portal®</a>
+			© 2014 portal		
+		</p>
 		<a href="http://localhost/portal/" target="_blank" class="pull-left"><i class="icon-share icon-white"></i> Back to home.</a>
 	</div>
 </body>

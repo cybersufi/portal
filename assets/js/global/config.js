@@ -5,5 +5,5 @@
  * 
  */
 
-var site_url = 'http://localhost/website/portal';
+var site_url = 'http://localhost/portal';
 var sitename = document.title;

@@ -4,7 +4,7 @@ class Main extends CI_Controller {
 
 	public function index() {
 		$data["site_name"] = "blah";
-		$this->load->view('global/page_redirect', $data);
+		$this->load->view('global/pgr', $data);
 	}
 }
 
