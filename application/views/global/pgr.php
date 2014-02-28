@@ -3,8 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr" style="display: block;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="generator" content="Joomla! - Open Source Content Management">
-  	<title>Redirecting - <?php echo $site_name; ?></title>
+	<title>Redirecting - <?php echo $site_name; ?></title>
   	<link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
 	<?php
 		$this->asset->stylesheet('global/global2');

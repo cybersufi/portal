@@ -16,7 +16,7 @@ $config['site_name'] = 'Portal System';
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://'.$_SERVER['HTTP_HOST'].'/portal/';
+$config['base_url']	= 'http://'.$_SERVER['HTTP_HOST'].'/';
 
 /*
 |--------------------------------------------------------------------------
