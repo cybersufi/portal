@@ -6,23 +6,11 @@
 	<title>Redirecting - <?php echo $site_name; ?></title>
   	<link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
 	<?php
-		$this->asset->stylesheet('global/global2');
+		$this->asset->stylesheet('global/global-min');
 	?>
   	<style type="text/css">
 		html { display:none }
   	</style>
-	<style type="text/css">
-		/* Responsive Styles */
-		@media (max-width: 480px) {
-			.view-login .container {
-				margin-top: -170px;
-			}
-			.btn {
-				font-size: 13px;
-				padding: 4px 10px 4px;
-			}
-		}
-	</style>
 </head>
 
 <body class="site com_login view-login layout-default task- itemid- " style="">
